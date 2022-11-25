@@ -1,8 +1,10 @@
 import React from 'react';
-
+import HeaderComponent from './HeaderComponent'
 const ScreenFirst = () => {
     return (
-        <section className="firstScreen" >
+        <div className="firstScreenWrapper">
+            <HeaderComponent></HeaderComponent>
+            <section className="firstScreen" >
             <div className="heading">
                 <h1>Everything You Love About Coffee</h1>
                 <img src="/icons/beens.svg" alt="" />
@@ -15,6 +17,7 @@ const ScreenFirst = () => {
                 </button>
             </div>
         </section>
+        </div>
     );
 };
 

@@ -1,14 +1,11 @@
 import React from 'react';
 import ItemComponent from './_childs/ItemComponent';
 
-
-
 const ScreenThree = (props) => {
 
     const Items = () => {
-        return props.data.map(item => <ItemComponent item={item} />)
+        return props.data.map((item, index) => <ItemComponent item={item} key={index} />)
     }
-
     return (
         <section className='sectionThree' >
             <h2>Our best</h2>
@@ -18,6 +15,4 @@ const ScreenThree = (props) => {
         </section>
     );
 };
-
-
 export default ScreenThree;

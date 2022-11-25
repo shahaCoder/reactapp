@@ -1,19 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 * {
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Merienda';
+	text-decoration: none;
 }
-
-.firstScreen {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+li{
+	cursor: pointer;
+}
+.firstScreenWrapper{
 
 	width: 100%;
 	height: 80vh;
 	background-image: url('../public/images/screeone.png');
 	background-repeat: no-repeat;
-
+}
+.firstScreen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	.heading {
 		display: flex;
 		justify-content: center;
@@ -84,7 +91,8 @@
 		justify-content: space-between;
 		align-items: center;
 
-		.item-component {
+		.item-component,
+		.item-component2 {
 			width: 220px;
 			padding: 20px;
 			display: flex;
@@ -100,3 +108,163 @@
 
 }
 
+.ScreenFour{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	gap: 25px;
+	.left-box,
+	.right-box{
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		input{
+			width: 180px;
+            height: 30px;
+            background: #FFFFFF;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+			border: none;
+			padding-left: 10px;
+		}
+	}
+	.right-box{
+		.btns{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			button{
+				width: 75px;
+				height: 30px;
+				background: #FFFFFF;
+				box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+				border-radius: 4px 0px 0px 4px;
+				border: none;	
+			}
+		}
+	}
+}
+.card-box{
+	width: 100%;
+	padding: 25px 100px;
+}
+.card{
+	width: 30%
+}
+// Header
+header,
+footer{
+	width: 100%;
+	padding: 30px 140px;
+	display: flex;
+	gap: 30px;
+}
+.list1{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.list{
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+li{
+	font-family: 'Merienda';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 17px;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+footer{
+	justify-content: center;
+}
+.footer-text{
+	color: black;
+}
+.coffe-logo-img{
+	filter: invert(100%);
+}
+.footer-img-block{
+	display: flex;
+	justify-content: center;
+	img{
+		filter: invert(100%);
+	}
+}
+.wrapper-coffee{
+	width: 100%;
+	height: 40vh;
+	background-image: url(../public/images/coffee-image.png);
+	background-repeat: no-repeat;
+}
+.main-text{
+	p{
+		color: white;
+		text-align: center;
+		font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 58px;
+        margin-top: 35px;
+        color: #FFFFFF;
+	}
+}
+.section2-box{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 100px;
+}
+
+.right_section-box{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.pst{
+	text-align: center;
+}
+.sec-two{
+	display: flex;
+	align-items: center;
+	gap: 50px;
+	flex-direction: column;
+}
+
+.item-component2{
+	box-shadow: 0px 0px 5px #c4c4c4;
+	padding: 20px;
+	height: 230px;
+	img{
+		display: block;
+		margin: auto;
+	}
+	.txt{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 10px;
+		float: right;
+	}
+}
+.title{
+	margin-bottom: 10px;
+}
+.for-flex{
+	width: 60%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 70px;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 25px;
+}
